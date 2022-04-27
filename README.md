@@ -3,29 +3,30 @@ Estructura de Proyecto Lab de Compu II - 2022
 
 ## Multiplicadores de tablas
 
-## Autor:
+## Autores:
 * Pedro Cajal
-
+* Agustin Glaiel
 ## Descripcion:
 
-| Email | Autor |
-|-------|-------|
-| 1915684@ucc.edu.ar | Pedro Cajal | 
-
+| Email | Autor         |
+|-------|---------------|
+| 1915684@ucc.edu.ar | Pedro Cajal   |
+ |1912095@ucc.edu.ar | Agustin Glaiel |
 Link Del Proyecto [Multiplicadores de tablas](http://localhost:63342/proyecto2022-cajal/Index.html?_ijt=tkft0ce354bvjdckb966d6tui9&_ij_reload=RELOAD_ON_SAVE)
 
 El proyecto consiste de una pagina ewb que sea dinamica y divertida para ayudar a los niños a aprender las tablas de multiplicacion. Sin la necesidad de estar horas con libros y tareas basicas y aburridas del colegio.
-
+## Tecnologia utilizada:
+Para desarollar el proyecto nosotros utilizamos WebStorm desarrollando la pagina en HTML y CSS
 ## Proyecto final:
 ### Sobre el Repositorio:
-- [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2022-ApellidoAlumno1-ApellidoAlumno2"
-- [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores con nombre y apellido, link de gh-pages, contenido de la página, listado de tecnologías usadas, etc)
-- [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups/Wireframes). Es importante que contenga SKETCH y MOCKUP/WIREFRAME (debe estar en formato: PDF, PNG o JPG).
+- [x] El proyecto debe estar subido al repositorio adecuado "Proyecto2022-ApellidoAlumno1-ApellidoAlumno2"
+- [x] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores con nombre y apellido, link de gh-pages, contenido de la página, listado de tecnologías usadas, etc)
+- [x] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups/Wireframes). Es importante que contenga SKETCH y MOCKUP/WIREFRAME (debe estar en formato: PDF, PNG o JPG).
 - [ ] El código debe estar pusheado en el repositorio (emplear gh-pages ó publicar la página desde el main), y no debe haber diferencias entre main y gh-pages (verificar de realizar el Merge).
-- [ ] Publicar la Web empleando GitHubPages
-- [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear .gitignore)
+- [x] Publicar la Web empleando GitHubPages
+- [x] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear .gitignore)
 ### Sobre el Proyecto General
-- [ ] La página principal debe llamarse index
+- [x] La página principal debe llamarse index
 - [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
 - [ ] No debe haber errores presentes (realizar Code > Inspect Code para verificar que no haya errores)
 - [ ] Se debe emplear algún favicon
@@ -57,5 +58,5 @@ El proyecto consiste de una pagina ewb que sea dinamica y divertida para ayudar 
 - [ ] Los labels deben contener el atributo for (el for debe contener el id del input al cual se referencia)
 - [ ] Si hay una tabla en la página, debe contener <caption/caption>
 ### Sobre las correcciones:
-- [ ] Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
-- [ ] Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5) , independientemente de los valores ingresados.
+* Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
+* Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5) , independientemente de los valores ingresados.
