@@ -35,15 +35,15 @@ El proyecto consiste de una pagina ewb que sea dinamica y divertida para ayudar 
 - [ ] Todas las etiquetas deben estar en minúscula
 - [ ] Poner comillas a todos los atributos
 - [ ] Title debe contener el título de la página
-- [ ] En el <head></head> incluir las etiquetas <meta> detallando: autor, descripcion y palabras clave
+- [ ] En el <head/head> incluir las etiquetas <meta> detallando: autor, descripcion y palabras clave
 - [ ] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, section, article, footer)
-- [ ] Emplear <header></header>. En el contenido de la cabecera debe haber un título <h1></h1>, puede tener color de fondo, algún logotipo, etc.
-- [ ] Debe haber por lo menos una etiqueta <img> en la página.
-- [ ] La estructura de la página debe estar definida con <div></div>
-- [ ] Debe contener al menos 3 elementos de tipo <input> o <select> ó <button> que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
-- [ ] Debe contener un <canvas>, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
-- [ ] No espaciar con excesivos <br>.    Utilizar márgenes, paddings, etc.
--[ ] No utilizar etiquetas deprecadas.
+- [ ] Emplear <header/header>. En el contenido de la cabecera debe haber un título <h1/h1>, puede tener color de fondo, algún logotipo, etc.
+- [ ] Debe haber por lo menos una etiqueta <img en la página.
+- [ ] La estructura de la página debe estar definida con <div/div>
+- [ ] Debe contener al menos 3 elementos de tipo input o select ó button que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
+- [ ] Debe contener un canvas, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
+- [ ] No espaciar con excesivos br. Utilizar márgenes, paddings, etc.
+- [ ] No utilizar etiquetas deprecadas.
 - [ ] Todas las etiquetas deben estar correctamente cerradas
 - [ ] Los ids de los elementos deben ser unívocos
 ### Sobre el CSS
@@ -53,10 +53,9 @@ El proyecto consiste de una pagina ewb que sea dinamica y divertida para ayudar 
 - [ ] No emplear !important
 ### Sobre Accesibilidad:
 - [ ] Toda imagen debe tener su etiqueta alt
-- [ ] Todo <input> o <select> debe tener su <label>
+- [ ] Todo input o select debe tener su label
 - [ ] Los labels deben contener el atributo for (el for debe contener el id del input al cual se referencia)
-- [ ] Si hay una tabla en la página, debe contener <caption></caption>
+- [ ] Si hay una tabla en la página, debe contener <caption/caption>
 ### Sobre las correcciones:
 - [ ] Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
-- [ ] Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5)
-, independientemente de los valores ingresados.
+- [ ] Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5) , independientemente de los valores ingresados.
