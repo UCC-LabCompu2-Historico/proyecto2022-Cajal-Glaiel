@@ -52,3 +52,19 @@ header nav a:hover{
 header nav a:active{
     background: #dce50d;
 }
+.Boton{
+    font-size: 100px;
+    background: #0c2cb0;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    padding: 50px;
+    width: 500px;
+    margin: auto;
+}
+.Boton:hover{
+    background: #f5d15a;
+    cursor: default;
+}
+.Boton:active{
+    background: #0c2cb0;
+}
