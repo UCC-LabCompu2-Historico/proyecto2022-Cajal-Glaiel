@@ -14,7 +14,7 @@ Estructura de Proyecto Lab de Compu II - 2022
  |1912095@ucc.edu.ar | Agustin Glaiel |
 Link Del Proyecto [Multiplicadores de tablas](http://localhost:63342/proyecto2022-cajal/Index.html?_ijt=tkft0ce354bvjdckb966d6tui9&_ij_reload=RELOAD_ON_SAVE)
 
-El proyecto consiste de una pagina ewb que sea dinamica y divertida para ayudar a los niños a aprender las tablas de multiplicacion. Sin la necesidad de estar horas con libros y tareas basicas y aburridas del colegio.
+El proyecto consiste de una pagina web que sea dinamica y divertida para ayudar a los niños a aprender las tablas de multiplicacion. Sin la necesidad de estar horas con libros y tareas basicas y aburridas del colegio.
 ## Tecnologia utilizada:
 Para desarollar el proyecto nosotros utilizamos WebStorm desarrollando la pagina en HTML y CSS
 ## Proyecto final:
