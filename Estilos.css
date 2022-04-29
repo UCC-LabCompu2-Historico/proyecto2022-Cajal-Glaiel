@@ -2,23 +2,53 @@
     padding: 0px;
 }
 body{
-    background: repeating-radial-gradient(orange, yellow);
+    background: repeating-radial-gradient(circle, rgba(232, 215, 136, 0.64), rgb(245, 209, 90));
     background-repeat: repeat-x;
     background-attachment: fixed;
-    background-size: 1500px;
     background-position: center;
 }
 header{
     width: 100%;
     overflow: hidden;
     background: #e1c00f;
-    text-align: center;
-    font-size: 50px;
     margin-bottom: 20px;
+    position: fixed;
 }
 #FotoLogo{
-    width: 150px;
+    width: 100px;
     float: left;
     border-radius: 60%;
-    margin: 20px;
+    margin: 10px 20px 10px;
+}
+.Centrado{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 200px;
+}
+header .Logo{
+    font-size: 55px;
+    float: top;
+    line-height: 100px;
+    margin: 10px;
+    font-family: 'Press Start 2P', cursive;
+}
+header nav{
+    background: rgba(234, 86, 32, 0.56);
+    float: bottom;
+    font-size: 40px;
+    font-family: 'Modak', cursive;
+}
+header nav a{
+    display: inline-block;
+    color: #535435;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+header nav a:hover{
+    background: aliceblue;
+    border-radius: 50px;
+}
+header nav a:active{
+    background: yellow;
 }
