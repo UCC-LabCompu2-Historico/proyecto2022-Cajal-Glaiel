@@ -68,3 +68,18 @@ header nav a:active{
 .Boton:active{
     background: #0c2cb0;
 }
+#VideoExplicativo{
+    padding-left: 200px;
+}
+.Encabezados {
+    text-align: center;
+    font-size: 35px;
+}
+.VideosExtras{
+    margin: 30px;
+    padding-left: 50px;
+}
+ul{
+    text-align: center;
+    font-size: 20px;
+}
