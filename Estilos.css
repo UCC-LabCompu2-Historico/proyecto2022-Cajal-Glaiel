@@ -42,13 +42,13 @@ header nav{
 }
 header nav a{
     display: inline-block;
-    color: white;
+    color: #f3efef;
     text-decoration: none;
     padding: 10px 20px;
 }
 header nav a:hover{
-    background: aliceblue;
-    border-radius: 50px;
+    background: #0e0d0d;
+    border-radius: 100px;
 }
 header nav a:active{
     background: #484846;
@@ -60,7 +60,7 @@ header nav a:active{
     font-family: 'Press Start 2P', cursive;
     padding: 50px;
     width: 500px;
-    margin: auto;
+    margin: 150px 200px 100px 375px ;
 }
 .Boton:hover{
     background: rgba(105, 101, 101, 0.51);
