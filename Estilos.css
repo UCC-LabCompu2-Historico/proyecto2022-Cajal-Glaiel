@@ -2,7 +2,7 @@
     padding: 0px;
 }
 body{
-    background: repeating-radial-gradient(circle, rgba(232, 215, 136, 0.64), rgb(245, 209, 90));
+    background: repeating-radial-gradient(circle, rgb(246, 245, 245), rgb(141, 141, 141));
     background-repeat: repeat-x;
     background-attachment: fixed;
     background-position: center;
@@ -10,9 +10,10 @@ body{
 header{
     width: 100%;
     overflow: hidden;
-    background: #e1c00f;
+    background: #0a0901;
     margin-bottom: 20px;
     position: fixed;
+    color: white;
 }
 #FotoLogo{
     width: 100px;
@@ -34,14 +35,14 @@ header .Logo{
     font-family: 'Press Start 2P', cursive;
 }
 header nav{
-    background: rgba(234, 86, 32, 0.56);
+    background: rgba(128, 4, 4, 0.51);
     float: bottom;
     font-size: 40px;
     font-family: 'Modak', cursive;
 }
 header nav a{
     display: inline-block;
-    color: #535435;
+    color: white;
     text-decoration: none;
     padding: 10px 20px;
 }
@@ -50,11 +51,11 @@ header nav a:hover{
     border-radius: 50px;
 }
 header nav a:active{
-    background: #dce50d;
+    background: #484846;
 }
 .Boton{
     font-size: 100px;
-    background: #0c2cb0;
+    background: rgba(79, 4, 4, 0.61);
     text-align: center;
     font-family: 'Press Start 2P', cursive;
     padding: 50px;
@@ -62,11 +63,11 @@ header nav a:active{
     margin: auto;
 }
 .Boton:hover{
-    background: #f5d15a;
+    background: rgba(105, 101, 101, 0.51);
     cursor: default;
 }
 .Boton:active{
-    background: #0c2cb0;
+    background: rgba(105, 101, 101, 0.51);
 }
 #VideoExplicativo{
     padding-left: 200px;
