@@ -60,7 +60,10 @@ header nav a:active{
     font-family: 'Press Start 2P', cursive;
     padding: 50px;
     width: 500px;
-    margin: 150px 200px 100px 375px ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 100px;
 }
 .Boton:hover{
     background: rgba(105, 101, 101, 0.51);
@@ -69,9 +72,7 @@ header nav a:active{
 .Boton:active{
     background: rgba(105, 101, 101, 0.51);
 }
-#VideoExplicativo{
-    padding-left: 200px;
-}
+
 .Encabezados {
     text-align: center;
     font-size: 30px;
@@ -86,4 +87,23 @@ ul{
 }
 .Contenido{
     font-family: "Century Schoolbook";
+}
+
+.OrigenMultiplicacion{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.ExplicacionJuego{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#Consejos {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#VideoExplicativo {
+    margin: auto;
 }
