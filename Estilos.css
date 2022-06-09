@@ -134,9 +134,11 @@ header nav div {
     margin-bottom: 150px;
 }
 
-body article input {
+body section input {
     background: #f6f5f5;
     width: 100px;
     height: 25px;
     text-align: center;
 }
+
+

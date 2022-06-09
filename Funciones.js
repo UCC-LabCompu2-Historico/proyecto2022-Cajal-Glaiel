@@ -16,3 +16,10 @@ function FunAyudas() {
     document.getElementById("resultadoAyudas").innerHTML = num1 * Number(num2);
 }
 
+function SumarPuntaje () {
+
+}
+
+function Segundero (){
+
+}
