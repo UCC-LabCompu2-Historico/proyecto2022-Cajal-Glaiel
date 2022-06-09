@@ -53,7 +53,7 @@ header nav a:hover{
 header nav a:active{
     background: #484846;
 }
-.Boton{
+#Boton{
     font-size: 100px;
     background: rgba(79, 4, 4, 0.61);
     text-align: center;
@@ -65,11 +65,11 @@ header nav a:active{
     margin-bottom: auto;
     margin-top: 100px;
 }
-.Boton:hover{
+#Boton:hover{
     background: rgba(105, 101, 101, 0.51);
     cursor: default;
 }
-.Boton:active{
+#Boton:active{
     background: rgba(105, 101, 101, 0.51);
 }
 
@@ -108,6 +108,10 @@ ul{
     margin: auto;
 }
 
-.listaJuego{
-    align-content: center;
+header nav div {
+    display: inline-block;
+    color: #f3efef;
+    text-decoration: none;
+    padding: 10px 20px;
+    word-spacing: 200px;
 }
