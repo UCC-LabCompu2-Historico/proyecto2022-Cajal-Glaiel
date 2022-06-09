@@ -12,7 +12,7 @@ function DibujarCanvas() {
 function FunAyudas() {
     let num1, num2;
     num1 = Number(document.getElementById("multi1").value);
-    num2 =document.getElementById("multi2")[0].value;
-    document.getElementById("resultadoAyudas").innerHTML =num1 * Number(num2);
+    num2 = document.getElementById("multi2").value;
+    document.getElementById("resultadoAyudas").innerHTML = num1 * Number(num2);
 }
 

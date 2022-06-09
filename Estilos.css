@@ -55,11 +55,12 @@ header nav a:active{
 }
 #Boton{
     font-size: 100px;
-    background: rgba(79, 4, 4, 0.61);
+    background: #a11818;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
     padding: 50px;
     width: 500px;
+    color: white;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
@@ -127,14 +128,15 @@ header nav div {
     text-align: center;
 }
 .Ultimo {
-    font-size: 50px;
+    font-size: 25px;
     padding: 25px;
     text-align: center;
-    background: red;
     margin-bottom: 150px;
 }
 
 body article input {
-    background: red;
-    width: 350px;
+    background: #f6f5f5;
+    width: 100px;
+    height: 25px;
+    text-align: center;
 }
