@@ -10,7 +10,7 @@ body{
 header{
     width: 100%;
     overflow: hidden;
-    background: #0a0901;
+    background: #a11818;
     margin-bottom: 20px;
     position: fixed;
     color: white;
@@ -35,7 +35,7 @@ header .Logo{
     font-family: 'Press Start 2P', cursive;
 }
 header nav{
-    background: rgba(128, 4, 4, 0.51);
+    background: rgb(119, 101, 101);
     float: bottom;
     font-size: 40px;
     font-family: 'Modak', cursive;
@@ -47,7 +47,7 @@ header nav a{
     padding: 10px 20px;
 }
 header nav a:hover{
-    background: #0e0d0d;
+    background: #a11818;
     border-radius: 100px;
 }
 header nav a:active{
@@ -74,6 +74,7 @@ header nav a:active{
 }
 
 .Encabezados {
+    padding-top: 25px;
     text-align: center;
     font-size: 30px;
 }
@@ -122,3 +123,18 @@ header nav div {
     border: double;
 }
 
+.listaJuego {
+    text-align: center;
+}
+.Ultimo {
+    font-size: 50px;
+    padding: 25px;
+    text-align: center;
+    background: red;
+    margin-bottom: 150px;
+}
+
+body article input {
+    background: red;
+    width: 350px;
+}
