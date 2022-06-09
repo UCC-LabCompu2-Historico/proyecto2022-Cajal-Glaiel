@@ -115,3 +115,9 @@ header nav div {
     padding: 10px 20px;
     word-spacing: 200px;
 }
+
+#Canvas {
+    align-content: center;
+    margin: 300px 150px 150px;
+    border: double;
+}
