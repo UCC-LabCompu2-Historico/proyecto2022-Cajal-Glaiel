@@ -17,8 +17,6 @@
     <script type="text/javascript" src="Funciones.js"></script>
 </head>
 
-<body>
-
 <header>
     <div class="Logo">
         <a href="Index.html"><img src="Imagenes/Simbolo%20Pagina%20Web.jpg" id="FotoLogo"></a>
@@ -32,17 +30,17 @@
     </nav>
 </header>
 
-<h1>Multplicación</h1>
-
-<div align="center" class="Numeros">
-    <input id="num1" type="text"  onchange="FunAyudas()">
-    X
-    <input id="num2" type="text" onchange="FunAyudas()">
-    =
-    <span id="num3" ></span>
-</div>
-<!--<canvas onload="DibujarCanvas()" width="600px" height="400px" id="Canvas" >
-    Tu navegador no soporta el Canvas
-</canvas>-->
+<body>
+    <h1>Multplicación</h1>
+    <div align="center" class="Numeros">
+        <input id="num1" type="text"  onload="Juguemos()">
+        X
+        <input id="num2" type="text" onload="Juguemos()">
+        =
+        <input id="num3" type="text" onload="Juguemos()">
+    </div>
+    <canvas onload="DibujarCanvas()" width="600px" height="400px" id="Canvas" >
+        Tu navegador no soporta el Canvas
+    </canvas>
 </body>
 </html>

@@ -23,3 +23,7 @@ function SumarPuntaje () {
 function Segundero (){
 
 }
+
+function Juguemos(){
+
+}
