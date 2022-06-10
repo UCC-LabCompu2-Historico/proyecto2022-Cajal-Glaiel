@@ -16,10 +16,6 @@ function FunAyudas() {
     document.getElementById("resultadoAyudas").innerHTML = num1 * Number(num2);
 }
 
-function SumarPuntaje () {
-
-}
-
 function Segundero(){
     let hora=0, minuto=0, segundo=0;
     segundo++;
@@ -67,10 +63,19 @@ function Juguemos(){
     document.getElementById("num2").innerHTML = numero2;
 
     let correcto = numero1 * numero2;
-    let respuesta = document.getElementById("num3").value;
-    console.log(respuesta);
-    if (correcto === respuesta){
-
-    }
+    return correcto;
 }
 
+function SumarPuntaje () {
+    let puntaje = 0;
+    document.getElementById("puntaje").innerHTML = puntaje;
+    let respuesta = document.getElementById("num3").value;
+    if (correcto === respuesta){
+        puntaje = puntaje + 10;
+    }
+    else {
+        puntaje = puntaje;
+    }
+    return puntaje;
+    document.getElementById("puntaje").innerHTML = puntaje;
+}
