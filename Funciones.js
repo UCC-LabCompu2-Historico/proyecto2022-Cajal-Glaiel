@@ -50,12 +50,27 @@ function Segundero(){
     let impresion = hora + ":" + minuto + ":" + segundo;
     document.getElementById("tiempero").innerHTML = impresion;
 }
-//setTimeout("Segundero()", 10)
 
 setInterval(function (){
     Segundero();
 }, 1000)
 
 function Juguemos(){
+    let numero1 = Math.round(Math.random() * 100);
+    let numero2 = Math.round(Math.random() * 100);
 
+    if ((numero1 || numero2)>10){
+        numero1 = Math.round(Math.random() * 100);
+        numero2 = Math.round(Math.random() * 100);
+    }
+    document.getElementById("num1").innerHTML = numero1;
+    document.getElementById("num2").innerHTML = numero2;
+
+    let correcto = numero1 * numero2;
+    let respuesta = document.getElementById("num3").value;
+    console.log(respuesta);
+    if (correcto === respuesta){
+
+    }
 }
+

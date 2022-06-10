@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>Juego de Multiplicación</title>
     <meta content="Pedro Cajal y Agustin Glaiel" name="autor">
-    <meta content="Pagina para enseñar las tablas de multiplicar a niños" name="Descripcion">
-    <meta content="Multiplicar, Aprender, Niños, Tablas" name="Keywords">
     <link rel="stylesheet" href="Estilos.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,16 +33,17 @@
 </header>
 
 <body>
-    <h1>Multplicación</h1>
-    <div align="center" class="Numeros">
-        <input id="num1" type="text"  onload="Juguemos()">
-        X
-        <input id="num2" type="text" onload="Juguemos()">
-        =
-        <input id="num3" type="text" onload="Juguemos()">
-    </div>
-    <canvas onload="DibujarCanvas()" width="600px" height="400px" id="Canvas" >
+    <section>
+        <div class="Numeros">
+            <span id="num1"  onload="Juguemos()"></span>
+            X
+            <span id="num2"  onload="Juguemos()"></span>
+            =
+            <input id="num3" type="text" onload="Juguemos()">
+        </div>
+    </section>
+    <!--<canvas onload="DibujarCanvas()" width="600px" height="400px" id="Canvas" >
         Tu navegador no soporta el Canvas
-    </canvas>
+    </canvas>-->
 </body>
 </html>
