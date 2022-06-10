@@ -115,7 +115,10 @@ header nav div {
     color: #f3efef;
     text-decoration: none;
     padding: 10px 20px;
-    word-spacing: 200px;
+}
+
+header nav div #puntaje {
+    padding-right: 200px;
 }
 
 #Canvas {
@@ -141,4 +144,14 @@ body section input {
     text-align: center;
 }
 
+body section div .ReglasJuego {
+    margin: 50px 200px 100px;
+    list-style-type: upper-roman;
+}
 
+header nav div #tiempero {
+    display: inline-block;
+    color: #f3efef;
+    text-decoration: none;
+    padding: 10px 20px;
+}
