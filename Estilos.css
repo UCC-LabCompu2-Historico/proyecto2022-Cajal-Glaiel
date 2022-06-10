@@ -2,10 +2,11 @@
     padding: 0px;
 }
 body{
-    background: repeating-radial-gradient(circle, rgb(246, 245, 245), rgb(141, 141, 141));
-    background-repeat: repeat-x;
-    background-attachment: fixed;
+    background-image: url("Imagenes/papel-grafico-papel-cuadriculado-imprimible-con-lineas-horizontales-en-color-fondo-geometrico-para-la-escuela-texturas-cuaderno-diario-con-lineas-realistas-2ggfnj4.jpg");
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    height: 100%;
 }
 header{
     width: 100%;
@@ -67,7 +68,7 @@ header nav a:active{
     margin-top: 100px;
 }
 #Boton:hover{
-    background: rgba(105, 101, 101, 0.51);
+    background: rgba(114, 69, 69, 0.51);
     cursor: default;
 }
 #Boton:active{
@@ -138,7 +139,7 @@ header nav div #puntaje {
 }
 
 body section input {
-    background: #f6f5f5;
+    background: rgb(255, 255, 255);
     width: 100px;
     height: 25px;
     text-align: center;
@@ -158,3 +159,11 @@ header nav div #tiempero {
     color: white;
 }
 
+#Consejos {
+    margin-left: 105px;
+    margin-right: 105px;
+}
+.ConsejosTablas {
+    margin-right: 150px;
+    margin-left: 150px;
+}
