@@ -18,31 +18,26 @@ function FunAyudas() {
 
 function Segundero(){
     let hora=0, minuto=0, segundo=0;
-    segundo++;
-    if(segundo>=60){
+    if (segundo >= 60) {
         minuto++;
-        segundo=0;
-        if (minuto>=60){
+        segundo = 0;
+        if (minuto >= 60) {
             hora++;
-            minuto=0;
+            minuto = 0;
         }
     }
-
     strSegundo = new String(segundo)
-    if (strSegundo.length == 1){
+    if (strSegundo.length == 1) {
         segundo = "0" + segundo;
     }
-
     strMinuto = new String(minuto)
-    if (strMinuto.length == 1){
+    if (strMinuto.length == 1) {
         minuto = "0" + minuto;
     }
-
     strHora = new String(hora)
-    if (strHora.length == 1){
+    if (strHora.length == 1) {
         hora = "0" + hora;
     }
-
     let impresion = hora + ":" + minuto + ":" + segundo;
     document.getElementById("tiempero").innerHTML = impresion;
 }
