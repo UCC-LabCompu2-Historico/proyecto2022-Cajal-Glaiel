@@ -42,6 +42,10 @@ function Segundero(){
     document.getElementById("tiempero").innerHTML = impresion;
 }
 
+function Reloj() {
+
+}
+
 setInterval(function (){
     Segundero();
 }, 1000)
