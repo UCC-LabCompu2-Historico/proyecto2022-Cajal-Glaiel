@@ -41,11 +41,6 @@ function Segundero(){
     let impresion = hora + ":" + minuto + ":" + segundo;
     document.getElementById("tiempero").innerHTML = impresion;
 }
-
-function Reloj() {
-
-}
-
 setInterval(function (){
     Segundero();
 }, 1000)

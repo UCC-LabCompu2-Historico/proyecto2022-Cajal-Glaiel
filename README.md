@@ -13,7 +13,7 @@ Estructura de Proyecto Lab de Compu II - 2022
 | 1915684@ucc.edu.ar | Pedro Cajal   |
  |1912095@ucc.edu.ar | Agustin Glaiel |
 
-Link Del Proyecto [Multiplicadores de tablas](http://localhost:63342/proyecto2022-Cajal-Glaiel/Index.html?_ijt=tru2i3aa2g47dr5kmk8vqpsql2)
+Link Del Proyecto [Multiplicadores de tablas](http://localhost:63342/proyecto2022-Cajal-Glaiel/Index.html?_ijt=aitqiohm20dmg2k7bie6s4kvit&_ij_reload=RELOAD_ON_SAVE)
 
 El proyecto consiste de una pagina web que sea dinamica y divertida para ayudar a los niños a aprender las tablas de multiplicacion. Sin la necesidad de estar horas con libros y tareas basicas y aburridas del colegio.
 ## Tecnologia utilizada:
@@ -54,10 +54,10 @@ Para desarollar el proyecto nosotros utilizamos WebStorm desarrollando la pagina
 - [x] Se debe emplear pseudoclase
 - [x] No emplear !important
 ### Sobre Accesibilidad:
-- [ ] Toda imagen debe tener su etiqueta alt
+- [x] Toda imagen debe tener su etiqueta alt
 - [ ] Todo input o select debe tener su label
 - [ ] Los labels deben contener el atributo for (el for debe contener el id del input al cual se referencia)
-- [ ] Si hay una tabla en la página, debe contener <caption/caption>
+- [x] Si hay una tabla en la página, debe contener <caption/caption>
 ### Sobre las correcciones:
 * Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
 * Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5) , independientemente de los valores ingresados.
