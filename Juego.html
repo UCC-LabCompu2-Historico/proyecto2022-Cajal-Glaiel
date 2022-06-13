@@ -23,24 +23,25 @@
     <nav>
         <div id="puntaje_tiempo">
             <div>
-                Puntaje:<span onload="SumarPuntaje()" id="puntaje"></span>
+                Puntaje:<span onload="SumarPuntaje()" id="puntaje"> 0 </span>
             </div>
             <div>
-                Tiempo: <span onload="Segundero()" id="tiempero">  </span>
+                Tiempo: <span id="minutos">0</span>:<span id="segundos">0</span>
             </div>
         </div>
     </nav>
 </header>
 
-<body>
+<body onload="Segundero(); Juguemos()">
 <h3 class="Contenido CenJuego Encabezados">Escribir la respuesta correcta a la siguiente multiplicación:</h3>
-    <section onload="Juguemos()">
+    <section>
         <div class="Numeros">
-            <span id="num1"></span>
+            <span id="num1"> 0 </span>
              X
-            <span id="num2"></span>
+            <span id="num2"> 0 </span>
              =
             <input id="num3" type="text">
+            <button type="button" class="btn btn-success" onclick="SumarPuntaje()">Siguiente</button>
         </div>
     </section>
     <!--<canvas onload="DibujarCanvas()" width="600px" height="400px" id="Canvas" >

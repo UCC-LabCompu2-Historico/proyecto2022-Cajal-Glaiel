@@ -1,13 +1,22 @@
+document.onload = cargarFunciones();
+
+function cargarFunciones(){
+    Juguemos();
+    Segundero();
+    SumarPuntaje();
+}
+
+
 function AbrirJuego(){
     let url;
     url = "Juego.html";
     window.open(url);
 }
 
-function DibujarCanvas() {
+/*function DibujarCanvas() {
     var canvas = document.getElementById("Canvas");
     var ctx = canvas.getContext("2d");
-}
+}*/
 
 function FunAyudas() {
     let num1, num2;
@@ -17,64 +26,53 @@ function FunAyudas() {
 }
 
 function Segundero(){
-    let hora=0, minuto=0, segundo=0;
-    if (segundo >= 60) {
-        minuto++;
-        segundo = 0;
-        if (minuto >= 60) {
-            hora++;
-            minuto = 0;
-        }
-    }
-    strSegundo = new String(segundo)
-    if (strSegundo.length == 1) {
-        segundo = "0" + segundo;
-    }
-    strMinuto = new String(minuto)
-    if (strMinuto.length == 1) {
-        minuto = "0" + minuto;
-    }
-    strHora = new String(hora)
-    if (strHora.length == 1) {
-        hora = "0" + hora;
-    }
-    let impresion = hora + ":" + minuto + ":" + segundo;
-    document.getElementById("tiempero").innerHTML = impresion;
+    segundos = 0;
+    minutos = 0;
+    s = document.getElementById("Segundos");
+    m = document.getElementById("minutos");
+
+    tiempero = setInterval(
+        function (){
+            if (segundos==60){
+                segundos = 0;
+                minutos++;
+                m.innerHTML = minutos;
+                if (minutos==60){
+                    minutos = 0;
+                }
+            }
+            s.innerHTML = segundos;
+            segundos++;
+        }, 100);
+    console.log(tiempero)
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 4c40a4d6a631726d9f22c0d6531a22b32ec61bc2
-setInterval(function (){
-    Segundero();
-}, 1000)
 
 function Juguemos(){
-    let numero1 = Math.round(Math.random() * 100);
-    let numero2 = Math.round(Math.random() * 100);
-
-    if ((numero1 || numero2)>10){
-        numero1 = Math.round(Math.random() * 100);
-        numero2 = Math.round(Math.random() * 100);
-    }
-    document.getElementById("num1").innerHTML = numero1;
-    document.getElementById("num2").innerHTML = numero2;
-
+    let min = 1;
+    let max = 10;
+    let numero1 = Math.random()*(max - min)+min;
+    let numero2 = Math.random()*(max - min)+min;
+    let n1 = Math.trunc(numero1);
+    let n2 = Math.trunc(numero2);
+    document.getElementById("num1").innerHTML = n1;
+    document.getElementById("num2").innerHTML = n2;
     let correcto = numero1 * numero2;
     return correcto;
 }
 
 function SumarPuntaje () {
-    let puntaje = 0;
-    document.getElementById("puntaje").innerHTML = puntaje;
+    let puntaje = o;
+    let n1 = document.getElementById("num1").innerHTML;
+    let n2 = document.getElementById("num2").innerHTML;
+    let correcto = n1 * n2;
+    console.log(correcto);
     let respuesta = document.getElementById("num3").value;
-    if (correcto === respuesta){
-        puntaje = puntaje + 10;
+    if (correcto == respuesta){
+        puntaje += 10;
     }
     else {
-        puntaje = puntaje;
+        alert("Respuesta Incorrecta")
     }
-    return puntaje;
-    document.getElementById("puntaje").innerHTML = puntaje;
+    document.getElementById("puntaje").outerHTML = puntaje;
+    Juguemos();
 }
