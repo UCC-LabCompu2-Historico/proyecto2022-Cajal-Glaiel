@@ -32,20 +32,27 @@
     </nav>
 </header>
 
-<body class="FondoJuego" onload="Segundero(); Juguemos()">
-<h3 class="Contenido CenJuego Encabezados">Escribir la respuesta correcta a la siguiente multiplicación:</h3>
-    <section id="MultiJuego">
-        <div class="Numeros">
-            <span id="num1"> 0 </span>
-             X
-            <span id="num2"> 0 </span>
-             =
-            <input id="num3" type="text">
-            <button type="button" class="btn btn-success" onclick="SumarPuntaje()">Siguiente</button>
-        </div>
-    </section>
-    <!--<canvas onload="DibujarCanvas()" width="600px" height="400px" id="Canvas" >
-        Tu navegador no soporta el Canvas
-    </canvas>-->
+<body class="FondoJuego" onload="Segundero(); Juguemos(), DibujarCanvas()">
+    <h3 class="Contenido CenJuego Encabezados">Escribir la respuesta correcta a la siguiente multiplicación:</h3>
+    <div>
+        <article id="MultiJuego">
+            <div class="Numeros">
+                <span id="num1"> 0 </span>
+                X
+                <span id="num2"> 0 </span>
+                =
+                <input id="num3" type="text" placeholder="respuesta">
+                <button type="button" onclick="SumarPuntaje()">Siguiente</button>
+            </div>
+        </article>
+        <br>
+        <p id="pizarron">
+            Podes usar el pizarrón de abajo para ayudarte!
+        </p>
+        <canvas width="800px" height="350px" id="Canvas" onmousemove="Dibujar(event)">
+        Su navegador no soporta canvas
+        </canvas>
+        <button type="button" class="limpiador" onclick="Limpiar()">Limpiar Pizarron</button>
+    </div>
 </body>
 </html>

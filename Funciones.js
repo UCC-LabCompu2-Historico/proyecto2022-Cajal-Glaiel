@@ -4,11 +4,6 @@ function AbrirJuego(){
     window.open(url);
 }
 
-/*function DibujarCanvas() {
-    var canvas = document.getElementById("Canvas");
-    var ctx = canvas.getContext("2d");
-}*/
-
 function FunAyudas() {
     let num1, num2;
     num1 = Number(document.getElementById("multi1").value);
@@ -60,11 +55,40 @@ function SumarPuntaje () {
     let respuesta = document.getElementById("num3").value;
     if (correcto == respuesta) {
         puntaje = Number(puntaje) + 10;
-    } else {
+    }
+    else {
         alert("Respuesta incorrecta")
-        puntaje = Number(puntaje) - 10;
     }
     document.getElementById("puntaje").innerHTML = puntaje;
     Juguemos()
     document.getElementById("num3").value = "";
+}
+
+function DibujarCanvas() {
+    var canvas = document.getElementById("Canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, canvas.width, canvas.height)
+}
+
+var click;
+function Dibujar(event){
+    var canvas = document.getElementById("Canvas");
+    ctx = canvas.getContext("2d");
+    var posX = event.clientX;
+    var posY = event.clientY;
+    console.log(posX, posY);
+    canvas.onmousedown = function (){click = true};
+    canvas.onmouseup = function (){click = false};
+    //ctx.beginPath();
+    if (click){
+        ctx.fillRect(posX, posY, 5, 5);
+        ctx.fill();
+    }
+}
+
+function Limpiar(){
+    var canvas = document.getElementById("Canvas");
+    ctx = canvas.getContext("2d");
+    canvas.width = canvas.width;
 }

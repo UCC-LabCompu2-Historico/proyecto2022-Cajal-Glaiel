@@ -123,12 +123,6 @@ header nav div #puntaje {
     padding-right: 200px;
 }
 
-#Canvas {
-    align-content: center;
-    margin: 300px 150px 150px;
-    border: double;
-}
-
 .listaJuego {
     text-align: center;
 }
@@ -195,12 +189,12 @@ header nav div #tiempero {
     padding-top: 250px;
 }
 .Numeros {
-    background: rgba(65, 64, 64, 0.69);
-    margin-left: 350px;
-    margin-right: 350px;
+    background: white;
+    margin-left: 550px;
+    margin-right: 550px;
     text-align: center;
     height: 55px;
-    padding: 55px;
+    padding: 20px;
 }
 .FondoJuego {
     background-image: url("Imagenes/FondoJuego.jpg");
@@ -211,4 +205,27 @@ header nav div #tiempero {
 }
 .SelecPrueba{
     padding: 10px 25px 10px 25px;
+}
+
+#Canvas {
+    border: double;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: block;
+    background-color: white;
+}
+
+#pizarron {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.limpiador{
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
 }
