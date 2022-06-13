@@ -2,7 +2,7 @@
     padding: 0px;
 }
 body{
-    background-image: url("Imagenes/papel-grafico-papel-cuadriculado-imprimible-con-lineas-horizontales-en-color-fondo-geometrico-para-la-escuela-texturas-cuaderno-diario-con-lineas-realistas-2ggfnj4.jpg");
+    background-image: url("Imagenes/FondoPagina.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -200,4 +200,11 @@ header nav div #tiempero {
     text-align: center;
     height: 55px;
     padding: 55px;
+}
+.FondoJuego {
+    background-image: url("Imagenes/FondoJuego.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
 }
