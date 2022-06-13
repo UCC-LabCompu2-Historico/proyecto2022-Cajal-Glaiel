@@ -146,9 +146,10 @@ body section input {
     text-align: center;
 }
 
-body section div .ReglasJuego {
+.ReglasJuego {
     margin: 35px 350px 100px;
     list-style-type: decimal;
+    list-style-position: inside;
 }
 
 header nav div #tiempero {
@@ -207,4 +208,7 @@ header nav div #tiempero {
     background-position: center;
     background-size: cover;
     height: 100%;
+}
+.SelecPrueba{
+    padding: 10px 25px 10px 25px;
 }

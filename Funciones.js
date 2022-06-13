@@ -53,17 +53,18 @@ function Juguemos(){
 
 function SumarPuntaje () {
     let puntaje = document.getElementById("puntaje").innerHTML;
-    let n1=document.getElementById("num1").innerHTML;
-    let n2=document.getElementById("num2").innerHTML;
-    let correcto=n1*n2;
+    let n1 = document.getElementById("num1").innerHTML;
+    let n2 = document.getElementById("num2").innerHTML;
+    let correcto = n1 * n2;
     console.log(correcto)
     let respuesta = document.getElementById("num3").value;
-    if(correcto==respuesta){
+    if (correcto == respuesta) {
         puntaje = Number(puntaje) + 10;
-    }else{
+    } else {
         alert("Respuesta incorrecta")
         puntaje = Number(puntaje) - 10;
     }
     document.getElementById("puntaje").innerHTML = puntaje;
     Juguemos()
+    document.getElementById("num3").value = "";
 }
