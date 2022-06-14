@@ -123,12 +123,11 @@ function SumarPuntaje () {
  * @param {canvas} canvas - el canvas en el juego
  */
 
-function DibujarCanvas() {
-    var canvas = document.getElementById("Canvas");
-    var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "white";
-    ctx.fillRect(0, 0, canvas.width, canvas.height)
-}
+//function DibujarCanvas() {
+  //  var canvas = document.getElementById("Canvas");
+    //var ctx = canvas.getContext("2d");
+//}
+
 
 /**
  * Funcion para poder dibujar como si fuera un paint para el uso y ayuda de las multiplicaciones
@@ -141,19 +140,19 @@ function DibujarCanvas() {
  * que simule dibujar como un lapiz
  */
 
-var click;
+var bandera;
 function Dibujar(event){
     var canvas = document.getElementById("Canvas");
-    ctx = canvas.getContext("2d");
+    var ctx = canvas.getContext("2d");
     var posX = event.clientX;
     var posY = event.clientY;
     console.log(posX, posY);
-    canvas.onmousedown = function (){click = true};
-    canvas.onmouseup = function (){click = false};
+    canvas.onmousedown = function (){bandera = true};
+    canvas.onmouseup = function (){bandera = false};
     //ctx.beginPath();
-    if (click){
+    if (bandera){
         ctx.fillRect(posX, posY, 5, 5);
-        ctx.fill();
+        ctx.fill;
     }
 }
 

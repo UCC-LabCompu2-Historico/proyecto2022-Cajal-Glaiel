@@ -209,12 +209,12 @@ header nav div #tiempero {
 }
 
 #Canvas {
-    border: double;
+    border: solid;
     padding-left: 0;
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     display: block;
     background-color: white;
 }

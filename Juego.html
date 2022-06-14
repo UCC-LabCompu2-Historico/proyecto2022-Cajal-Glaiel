@@ -32,7 +32,7 @@
     </nav>
 </header>
 
-<body class="FondoJuego" onload="Segundero(); Juguemos(), DibujarCanvas()">
+<body class="FondoJuego" onload="Segundero(); Juguemos()" onmousemove="Dibujar(event)">
     <h3 class="Contenido CenJuego Encabezados">Escribir la respuesta correcta a la siguiente multiplicación:</h3>
     <div>
         <article id="MultiJuego">
@@ -49,7 +49,7 @@
         <p id="pizarron">
             Podes usar el pizarrón de abajo para ayudarte!
         </p>
-        <canvas width="800px" height="350px" id="Canvas" onmousemove="Dibujar(event)">
+        <canvas width="800px" height="350px" id="Canvas" >
             Su navegador no soporta canvas
         </canvas>
         <button type="button" class="limpiador" onclick="Limpiar()">Limpiar Pizarron</button>
