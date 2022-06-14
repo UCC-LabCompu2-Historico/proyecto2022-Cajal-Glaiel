@@ -123,10 +123,10 @@ function SumarPuntaje () {
  * @param {canvas} canvas - el canvas en el juego
  */
 
-//function DibujarCanvas() {
-  //  var canvas = document.getElementById("Canvas");
-    //var ctx = canvas.getContext("2d");
-//}
+function DibujarCanvas() {
+    var canvas = document.getElementById("Canvas");
+    var ctx = canvas.getContext("2d");
+}
 
 
 /**
