@@ -208,7 +208,7 @@ header nav div #tiempero {
     padding: 10px 25px 10px 25px;
 }
 
-#Canvas {
+#canvas {
     border: solid;
     padding-left: 0;
     padding-right: 0;
@@ -229,4 +229,7 @@ header nav div #tiempero {
     margin-left: 715px;
     margin-top: 5px;
     font-weight: bold;
+}
+#Jugados {
+    padding-left: 600px;
 }

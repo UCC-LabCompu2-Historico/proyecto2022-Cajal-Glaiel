@@ -95,7 +95,6 @@ function Juguemos(){
  * @param {number} respuesta - toma la respuesta que ingresa la persona
  */
 
-var veces_jugadas = 0;
 function SumarPuntaje () {
     let puntaje = document.getElementById("puntaje").innerHTML;
     let n1 = document.getElementById("num1").innerHTML;
@@ -110,24 +109,26 @@ function SumarPuntaje () {
         alert("Respuesta incorrecta")
     }
     document.getElementById("puntaje").innerHTML = puntaje;
-    while (veces_jugadas <= 5){
         Juguemos()
         document.getElementById("num3").value = "";
-        veces_jugadas++;
-    }
 }
 
 /**
- * Funcion para dibujar el canvas en el juego para usarlo como pizarron blanco
- * @method DibujarCanvas
- * @param {canvas} canvas - el canvas en el juego
+ * Funcion para Contar las veces jugadas
+ * @method Cantidad
+ * @param {canvas} VecesJugado - cuenta las veces jugadas
  */
 
-function DibujarCanvas() {
-    var canvas = document.getElementById("Canvas");
-    var ctx = canvas.getContext("2d");
+function Cantidad() {
+    let VecesJugado = document.getElementById("Jugados").innerHTML;
+    VecesJugado++;
+    document.getElementById("Jugados").innerHTML = VecesJugado;
+    if (VecesJugado==15){
+        document.getElementById("MultiJuego").remove();
+        document.getElementById("ConsignaJuego").remove();
+        alert("¡Se termino el juego!")
+    }
 }
-
 
 /**
  * Funcion para poder dibujar como si fuera un paint para el uso y ayuda de las multiplicaciones
@@ -141,17 +142,16 @@ function DibujarCanvas() {
  */
 
 var bandera;
-function Dibujar(event){
-    var canvas = document.getElementById("Canvas");
+function DibujarCanvas(event) {
+    var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
     var posX = event.clientX;
     var posY = event.clientY;
     console.log(posX, posY);
-    canvas.onmousedown = function (){bandera = true};
-    canvas.onmouseup = function (){bandera = false};
-    //ctx.beginPath();
+    canvas.onmousedown = function () {bandera=true};
+    canvas.onmouseup = function () {bandera=false};
     if (bandera){
-        ctx.fillRect(posX, posY, 5, 5);
+        ctx.fillRect(posX-365, posY-371, 5, 5);
         ctx.fill;
     }
 }
@@ -162,7 +162,7 @@ function Dibujar(event){
  */
 
 function Limpiar(){
-    var canvas = document.getElementById("Canvas");
+    var canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
     canvas.width = canvas.width;
 }

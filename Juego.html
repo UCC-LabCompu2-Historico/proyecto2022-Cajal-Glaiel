@@ -28,12 +28,15 @@
             <div>
                 Tiempo: <span id="minutos">0</span>:<span id="segundos">0</span>
             </div>
+            <div>
+                <span id="Jugados">0</span>/15
+            </div>
         </div>
     </nav>
 </header>
 
 <body class="FondoJuego" onload="Segundero(); Juguemos(), DibujarCanvas()" >
-    <h3 class="Contenido CenJuego Encabezados">Escribir la respuesta correcta a la siguiente multiplicación:</h3>
+    <h3 class="Contenido CenJuego Encabezados" id="ConsignaJuego">Escribir la respuesta correcta a la siguiente multiplicación:</h3>
     <div>
         <article id="MultiJuego">
             <div class="Numeros">
@@ -42,15 +45,15 @@
                 <span id="num2"> 0 </span>
                 <br>
                 <label>Respuesta:<input id="num3" type="text"></label>
-                <button type="button" onclick="SumarPuntaje()">Siguiente</button>
+
+                <button type="button" onclick="SumarPuntaje(); Cantidad(); Limpiar()">Siguiente</button>
             </div>
         </article>
         <br>
-        <p id="pizarron">
+        <p id="pizarron" class="CenJuego">
             Podes usar el pizarrón de abajo para ayudarte!
         </p>
-        <canvas width="800px" height="350px" id="Canvas" onmousemove="Dibujar(event)">
-            Su navegador no soporta canvas
+        <canvas width="800px" height="350px" id="canvas" onmousemove="DibujarCanvas(event)">
         </canvas>
         <button type="button" class="limpiador" onclick="Limpiar()">Limpiar Pizarron</button>
     </div>
