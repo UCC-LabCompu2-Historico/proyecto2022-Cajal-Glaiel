@@ -75,10 +75,10 @@ function Segundero(){
 function Juguemos(){
     let min =1;
     let max=10;
-    let numero1=Math.random()*(max-min)+min;
-    let numero2=Math.random()*(max-min)+min;
-    let n1=Math.trunc(numero1)
-    let n2=Math.trunc(numero2)
+    let numero1=Math.random()*(max-min)+min; //nos da el random entre 1 y 10
+    let numero2=Math.random()*(max-min)+min; //nos da el random entre 1 y 10
+    let n1=Math.trunc(numero1) //redondeamos el random
+    let n2=Math.trunc(numero2) //redondeamos el random
     document.getElementById("num1").innerHTML = n1;
     document.getElementById("num2").innerHTML = n2;
     let correcto = numero1 * numero2;
@@ -95,6 +95,7 @@ function Juguemos(){
  * @param {number} respuesta - toma la respuesta que ingresa la persona
  */
 
+var veces_jugadas = 0;
 function SumarPuntaje () {
     let puntaje = document.getElementById("puntaje").innerHTML;
     let n1 = document.getElementById("num1").innerHTML;
@@ -109,8 +110,11 @@ function SumarPuntaje () {
         alert("Respuesta incorrecta")
     }
     document.getElementById("puntaje").innerHTML = puntaje;
-    Juguemos()
-    document.getElementById("num3").value = "";
+    while (veces_jugadas <= 5){
+        Juguemos()
+        document.getElementById("num3").value = "";
+        veces_jugadas++;
+    }
 }
 
 /**
