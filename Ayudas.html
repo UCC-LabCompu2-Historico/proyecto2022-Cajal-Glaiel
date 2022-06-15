@@ -16,7 +16,7 @@
 
 <header>
     <div class="Logo">
-        <a href="Index.html"><img src="Imagenes/Simbolo%20Pagina%20Web.jpg" id="FotoLogo"></a>
+        <a href="Index.html"><img alt="Logo de la página" src="Imagenes/Simbolo%20Pagina%20Web.jpg" id="FotoLogo"></a>
         <h1>Multiplicador de Tablas</h1>
     </div>
     <nav>
@@ -33,8 +33,8 @@
     <!--<h1> AYUDAS </h1>-->
     <h3 class="Encabezados" > Tablas de Multiplicar</h3>
     <br>
-    <div>
-        <div align="center"><img src="Imagenes/16362.png" id="Tablas" width="1200" height="850" alt="Tablas del 1 al 10"></div>
+    <div id="Tablas">
+        <img alt="Foto con las tablas de multiplicar" src="Imagenes/16362.png"  width="1200" height="850" alt="Tablas del 1 al 10">
     </div>
     <br>
     <h3 class="Encabezados" > Consejos y Trucos</h3>
@@ -49,34 +49,38 @@
         </ul>
     </div>
     <h3 class="Encabezados"> Prueba </h3>
-    <div align="center" class="Centrado Contenido Ultimo">
-        <select class="SelecPrueba" id="multi1" type="text" onchange="FunAyudas()">
-            <option value="1"> 1 </option>
-            <option value="2"> 2 </option>
-            <option value="3"> 3 </option>
-            <option value="4"> 4 </option>
-            <option value="5"> 5 </option>
-            <option value="6"> 6 </option>
-            <option value="7"> 7 </option>
-            <option value="8"> 8 </option>
-            <option value="9"> 9 </option>
-            <option value="10"> 10 </option>
-        </select>
-        X
-        <select class="SelecPrueba" id="multi2" type="text" onchange="FunAyudas()">
-            <option value="1"> 1 </option>
-            <option value="2"> 2 </option>
-            <option value="3"> 3 </option>
-            <option value="4"> 4 </option>
-            <option value="5"> 5 </option>
-            <option value="6"> 6 </option>
-            <option value="7"> 7 </option>
-            <option value="8"> 8 </option>
-            <option value="9"> 9 </option>
-            <option value="10"> 10 </option>
-        </select>
-        =
-        <span id="resultadoAyudas" ></span>
+    <div class="Centrado Contenido Ultimo">
+        <div class="opciones">
+            <label for="multi1"></label>
+            <select class="SelecPrueba" id="multi1" type="text" onchange="FunAyudas()">
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7 </option>
+                <option value="8"> 8 </option>
+                <option value="9"> 9 </option>
+                <option value="10"> 10 </option>
+            </select>
+            X
+            <label for="multi2"></label>
+            <select class="SelecPrueba" id="multi2" type="text" onchange="FunAyudas()">
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7 </option>
+                <option value="8"> 8 </option>
+                <option value="9"> 9 </option>
+                <option value="10"> 10 </option>
+            </select>
+            =
+            <span id="resultadoAyudas" ></span>
+        </div>
     </div>
 </section>
 </body>

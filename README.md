@@ -43,7 +43,7 @@ Para desarollar el proyecto nosotros utilizamos WebStorm desarrollando la pagina
 - [x] Debe haber por lo menos una etiqueta <img en la página.
 - [x] La estructura de la página debe estar definida con <div/div>
 - [x] Debe contener al menos 3 elementos de tipo input o select ó button que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
-- [ ] Debe contener un canvas, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
+- [x] Debe contener un canvas, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
 - [x] No espaciar con excesivos br. Utilizar márgenes, paddings, etc.
 - [x] No utilizar etiquetas deprecadas.
 - [x] Todas las etiquetas deben estar correctamente cerradas
@@ -55,8 +55,8 @@ Para desarollar el proyecto nosotros utilizamos WebStorm desarrollando la pagina
 - [x] No emplear !important
 ### Sobre Accesibilidad:
 - [x] Toda imagen debe tener su etiqueta alt
-- [ ] Todo input o select debe tener su label
-- [ ] Los labels deben contener el atributo for (el for debe contener el id del input al cual se referencia)
+- [x] Todo input o select debe tener su label
+- [x] Los labels deben contener el atributo for (el for debe contener el id del input al cual se referencia)
 - [x] Si hay una tabla en la página, debe contener <caption/caption>
 ### Sobre las correcciones:
 * Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega

@@ -108,8 +108,8 @@ body section div ul{
 }
 
 #VideoExplicativo {
-    margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 header nav div {
@@ -232,4 +232,12 @@ header nav div #tiempero {
 }
 #Jugados {
     padding-left: 600px;
+}
+
+#Tablas {
+    text-align: center;
+}
+
+.opciones{
+    text-align: center;
 }
