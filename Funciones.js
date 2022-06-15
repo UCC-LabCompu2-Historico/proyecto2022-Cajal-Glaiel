@@ -125,8 +125,6 @@ function Cantidad() {
     document.getElementById("Jugados").innerHTML = VecesJugado;
     if (VecesJugado==15){
         document.getElementById("MultiJuego").remove();
-        document.getElementById("ConsignaJuego").remove();
-        document.getElementById("pizarron").remove();
         alert("¡Se termino el juego! Felicitaciones")
     }
 }
@@ -152,7 +150,7 @@ function DibujarCanvas(event) {
     canvas.onmousedown = function () {bandera=true};
     canvas.onmouseup = function () {bandera=false};
     if (bandera){
-        ctx.fillRect(posX-365, posY-450, 5, 5);
+        ctx.fillRect(posX-359, posY-459, 5, 5);
         ctx.fill;
     }
 }
