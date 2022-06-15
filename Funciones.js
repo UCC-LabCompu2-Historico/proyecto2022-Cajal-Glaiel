@@ -116,7 +116,7 @@ function SumarPuntaje () {
 /**
  * Funcion para Contar las veces jugadas
  * @method Cantidad
- * @param {canvas} VecesJugado - cuenta las veces jugadas
+ * @param {number} VecesJugado - cuenta las veces jugadas
  */
 
 function Cantidad() {
@@ -126,7 +126,8 @@ function Cantidad() {
     if (VecesJugado==15){
         document.getElementById("MultiJuego").remove();
         document.getElementById("ConsignaJuego").remove();
-        alert("¡Se termino el juego!")
+        document.getElementById("pizarron").remove();
+        alert("¡Se termino el juego! Felicitaciones")
     }
 }
 
@@ -151,7 +152,7 @@ function DibujarCanvas(event) {
     canvas.onmousedown = function () {bandera=true};
     canvas.onmouseup = function () {bandera=false};
     if (bandera){
-        ctx.fillRect(posX-365, posY-371, 5, 5);
+        ctx.fillRect(posX-365, posY-450, 5, 5);
         ctx.fill;
     }
 }

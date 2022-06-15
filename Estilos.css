@@ -195,7 +195,6 @@ header nav div #tiempero {
     text-align: center;
     height: 55px;
     padding: 20px;
-
 }
 .FondoJuego {
     background-image: url("Imagenes/FondoJuego.jpg");
@@ -223,6 +222,7 @@ header nav div #tiempero {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .limpiador{
@@ -231,7 +231,7 @@ header nav div #tiempero {
     font-weight: bold;
 }
 #Jugados {
-    padding-left: 600px;
+    padding-left: 350px;
 }
 
 #Tablas {
