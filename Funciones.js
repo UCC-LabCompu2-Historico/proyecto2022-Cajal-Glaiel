@@ -105,7 +105,7 @@ function Cantidad() {
     let VecesJugado = document.getElementById("Jugados").innerHTML;
     VecesJugado++;
     document.getElementById("Jugados").innerHTML = VecesJugado;
-    if (VecesJugado==15){
+    if (VecesJugado==10){
         document.getElementById("MultiJuego").remove();
         alert("¡Se termino el juego! Felicitaciones")
     }
@@ -144,3 +144,9 @@ function Limpiar(){
     ctx = canvas.getContext("2d");
     canvas.width = canvas.width;
 }
+
+function Animar(){
+
+}
+
+setInterval("Animar",1000)
