@@ -1,7 +1,6 @@
 /**
  * Esta función abre la ventana del juego de la multiplicación
  * @method AbrirJuego
- * @param {string} url - archivo html del juego
  * @return ventana de juego
  */
 
@@ -14,8 +13,6 @@ function AbrirJuego(){
 /**
  * Permite seleccionar dos números para que la ayuda de la respuesta de la multiplicación
  * @method FunAyudas
- * @param {number} num1 - Guarda el primer numero que se selecciona para la multiplicación
- * @param {number} num2 - Guarda el segundo numero que se selecciona para la multiplicación
  * @return resultado de la multiplicación
  */
 
@@ -29,10 +26,6 @@ function FunAyudas() {
 /**
  * Esta función es el segundero en la ventana del juego, para que vaya sumando en segundos y minutos
  * @method Segundero
- * @param {number} s - almacena el primer valor de los segundos que es 0
- * @param {number} m - almacena el primer valor de los minutos que es 0
- * @param {number} segundos - contador para que aumenten los segundos
- * @param {number} minutos - contador para que aumenten los minutos
  * @return el print del tiempo corriendo
  */
 
@@ -59,17 +52,10 @@ function Segundero(){
 }
 
 /**
- * Esta función nos da dos numeros randoms entre 1 y 10 y elimina los decimales y toma los dos valores randoms que da
+ * Esta función nos dá dos números randoms entre 1 y 10 y elimina los decimales y toma los dos valores randoms que da
  * para verificar que este bien la multiplicación
  * @method Juguemos
- * @param {number} min - establece el numero mas chico que puede salir al azar
- * @param {number} max - establece el numero mas alto que puede salir al azar
- * @param {number} numero1 - da el primer numero random entre 1 y 10
- * @param {number} numero1 - da el segundo numero random entre 1 y 10
- * @param {number} n1 - redonde el primer numero para que sea un entero
- * @param {number} n2 - redondea el segundo numero para que sea un entero
- * @param {number} correcto - devuelve el numero correcto
- * @return los dos numeros randoms para el juego y el valor correcto de la multiplicacion
+ * @return los dos números randoms para el juego y el valor correcto de la multiplicación
  */
 
 function Juguemos(){
@@ -88,11 +74,7 @@ function Juguemos(){
 /**
  * Función para sumar el puntaje en caso de que la respuesta que ingrese la persona sea la correcta
  * @method SumarPuntaje
- * @param {number} puntaje - establece el puntaje
- * @param {number} n1 - toma el primer valor random que nos da la funcion anterior
- * @param {number} n2 - toma el segundo valor random que nos da la funcion anterior
- * @param {number} correcto - almacena cual es el valor correcto de la multiplicacion
- * @param {number} respuesta - toma la respuesta que ingresa la persona
+ * @return suma del puntaje en el juego
  */
 
 function SumarPuntaje () {
@@ -114,9 +96,9 @@ function SumarPuntaje () {
 }
 
 /**
- * Funcion para Contar las veces jugadas
+ * Función para contar las veces jugadas
  * @method Cantidad
- * @param {number} VecesJugado - cuenta las veces jugadas
+ * @return número de pregunta actual del total
  */
 
 function Cantidad() {
@@ -130,14 +112,11 @@ function Cantidad() {
 }
 
 /**
- * Funcion para poder dibujar como si fuera un paint para el uso y ayuda de las multiplicaciones
+ * Función para poder dibujar como si fuera un paint para el uso y ayuda de las multiplicaciones
  * @method Dibujar
- * @param {canvas} canvas - el canvas en el juego
- * @param {number} posX - posicion en el eje X donde se posiciona el mouse
- * @param {number} posY - posicion en el eje Y donde se posiciona el mouse
- * la variable clik se utiliza para que nos retorne valor falso o verdadero a una funcion
+ * la variable clik se utiliza para que nos retorne valor falso o verdadero a una función
  * que determina si esta haciendo click, y que si ese es el caso, que rellene en rectangulos pequeños
- * que simule dibujar como un lapiz
+ * que simule dibujar como un lápiz
  */
 
 var bandera;
@@ -156,7 +135,7 @@ function DibujarCanvas(event) {
 }
 
 /**
- * Funcion para borrar el canvas que se usa como pizarron
+ * Función para borrar el canvas que se usa como pizarron
  * @method Limpiar
  */
 
