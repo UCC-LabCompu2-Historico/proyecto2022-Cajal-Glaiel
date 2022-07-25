@@ -127,12 +127,12 @@ function Animar(){
     fotos[0].src = "Imagenes/tabla1.png"
     fotos[1].src = "Imagenes/tabla2.png"
     fotos[2].src = "Imagenes/tabla3.png"
-    fotos[3].src = "Imagenes/tabla3.png"
-    fotos[4].src = "Imagenes/tabla3.png"
-    fotos[5].src = "Imagenes/tabla3.png"
-    fotos[6].src = "Imagenes/tabla3.png"
-    fotos[7].src = "Imagenes/tabla3.png"
-    fotos[8].src = "Imagenes/tabla3.png"
+    fotos[3].src = "Imagenes/tabla4.png"
+    fotos[4].src = "Imagenes/tabla5.png"
+    fotos[5].src = "Imagenes/tabla6.png"
+    fotos[6].src = "Imagenes/tabla7.png"
+    fotos[7].src = "Imagenes/tabla8.png"
+    fotos[8].src = "Imagenes/tabla9.png"
 
     fotos[0].onload = function (){
         ctx.drawImage(fotos[0], 210, 50)
