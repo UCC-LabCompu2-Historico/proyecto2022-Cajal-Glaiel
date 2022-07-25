@@ -29,13 +29,13 @@
                 Tiempo: <span id="minutos">0</span>:<span id="segundos">0</span>
             </div>
             <div>
-                <span id="Jugados">0</span>/10
+                <span id="Jugados">0</span>/1
             </div>
         </div>
     </nav>
 </header>
 
-<body class="FondoJuego" onload="Segundero(); Juguemos(); DibujarCanvas()" >
+<body class="FondoJuego" onload="Segundero(); Juguemos(); Animar()" >
     <h3 class="Contenido CenJuego Encabezados" id="ConsignaJuego">Escribir la respuesta correcta a la siguiente multiplicación:</h3>
     <div>
         <article id="MultiJuego">
@@ -50,12 +50,8 @@
             </div>
         </article>
         <br>
-        <p id="pizarron">
-            Podés usar el pizarrón de abajo para ayudarte!
-        </p>
-        <canvas width="800px" height="350px" id="canvas" onmousemove="DibujarCanvas(event)">
+        <canvas width="1300px" height="350px" id="canvas" onmousemove="DibujarCanvas(event)">
         </canvas>
-        <button type="button" id="BotonLimpia" class="limpiador" onclick="Limpiar()">Limpiar Pizarron</button>
     </div>
 </body>
 </html>

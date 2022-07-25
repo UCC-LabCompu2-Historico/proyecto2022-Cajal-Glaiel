@@ -3,12 +3,12 @@
  * @method AbrirJuego
  * @return ventana de juego
  */
-
 function AbrirJuego(){
     let url;
     url = "Juego.html";
     window.open(url);
 }
+
 
 /**
  * Permite seleccionar dos números para que la ayuda de la respuesta de la multiplicación
@@ -91,8 +91,8 @@ function SumarPuntaje () {
         alert("Respuesta incorrecta")
     }
     document.getElementById("puntaje").innerHTML = puntaje;
-        Juguemos()
-        document.getElementById("num3").value = "";
+    Juguemos()
+    document.getElementById("num3").value = "";
 }
 
 /**
@@ -105,7 +105,7 @@ function Cantidad() {
     let VecesJugado = document.getElementById("Jugados").innerHTML;
     VecesJugado++;
     document.getElementById("Jugados").innerHTML = VecesJugado;
-    if (VecesJugado==10){
+    if (VecesJugado==1){
         document.getElementById("MultiJuego").remove();
         document.getElementById("pizarron").remove();
         document.getElementById("BotonLimpia").remove();
@@ -115,49 +115,16 @@ function Cantidad() {
     }
 }
 
-/**
- * Función para poder dibujar como si fuera un paint para el uso y ayuda de las multiplicaciones
- * @method Dibujar
- * la variable clik se utiliza para que nos retorne valor falso o verdadero a una función
- * que determina si esta haciendo click, y que si ese es el caso, que rellene en rectangulos pequeños
- * que simule dibujar como un lápiz
- */
 
-var bandera;
-function DibujarCanvas(event) {
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-    var posX = event.clientX;
-    var posY = event.clientY;
-    console.log(posX, posY);
-    canvas.onmousedown = function () {bandera=true};
-    canvas.onmouseup = function () {bandera=false};
-    if (bandera){
-        ctx.fillRect(posX-359, posY-459, 5, 5);
-        ctx.fill;
-    }
-}
-
-/**
- * Función para borrar el canvas que se usa como pizarron
- * @method Limpiar
- */
-
-function Limpiar(){
-    var canvas = document.getElementById("canvas");
-    ctx = canvas.getContext("2d");
-    canvas.width = canvas.width;
-}
-x=0;
-dx=2;
 function Animar(){
     var Canvas = document.getElementById("canvas");
     var ctx = Canvas.getContext("2d");
-
+    canvas.width = canvas.width;
     var img = new Image();
-    img.src="Imagenes/Ayuda_Tablas_9.png"
-    img.onload =function (){
-        ctx.drawImage(img, -400, -500);
+    img.src = "Imagenes/16362.png";
+
+    img.onload = function (){
+        ctx.drawImage(img, 10, 50)
     }
 }
 

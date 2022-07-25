@@ -209,27 +209,13 @@ header nav div #tiempero {
 
 #canvas {
     border: solid;
-    padding-left: 0;
-    padding-right: 0;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
     display: block;
-    background-color: rgba(255, 255, 255, 0.63);
+    background-color: rgb(255, 255, 255);
 }
 
-#pizarron {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.limpiador{
-    margin-left: 715px;
-    margin-top: 5px;
-    font-weight: bold;
-}
 #Jugados {
     padding-left: 350px;
 }
