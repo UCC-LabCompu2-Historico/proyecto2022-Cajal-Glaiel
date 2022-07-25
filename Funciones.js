@@ -108,6 +108,7 @@ function Cantidad() {
     if (VecesJugado==10){
         document.getElementById("MultiJuego").remove();
         alert("¡Se termino el juego! Felicitaciones")
+        clearInterval(tiempero);
     }
 }
 
