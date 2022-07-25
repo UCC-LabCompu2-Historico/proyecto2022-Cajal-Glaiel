@@ -115,18 +115,55 @@ function Cantidad() {
     }
 }
 
-
+/*
 function Animar(){
     var Canvas = document.getElementById("canvas");
     var ctx = Canvas.getContext("2d");
     canvas.width = canvas.width;
-    var img = new Image();
-    img.src = "Imagenes/favicon.ico";
-    img.onload = function (){
-        for (var i=100; i<=1200; i+=100){
-            ctx.drawImage(img, i, 175)
+    var img0 = new Image();
+    var img1 = new Image();
+    var img2 = new Image();
+    var img3 = new Image();
+    var img4 = new Image();
+    var img5 = new Image();
+    var img6 = new Image();
+    var img7 = new Image();
+    var img8 = new Image();
+    var img9 = new Image();
+    img0.src = "Imagenes/favicon.ico";
+    img1.src = "Imagenes/favicon.ico";
+    img2.src = "Imagenes/favicon.ico";
+    img3.src = "Imagenes/favicon.ico";
+    img4.src = "Imagenes/favicon.ico";
+    img5.src = "Imagenes/favicon.ico";
+    img6.src = "Imagenes/favicon.ico";
+    img7.src = "Imagenes/favicon.ico";
+    img8.src = "Imagenes/favicon.ico";
+    img9.src = "Imagenes/favicon.ico";
+    img0.onload = function () {
+        ctx.drawImage(img0, 50, 175)
+    }
+    img1.onload = function (){
+        ctx.drawImage(img1, 100, 175)
+    }
+}
+setInterval("Animar", 3000)
+*/
+function Animar(){
+    var Canvas = document.getElementById("canvas");
+    var ctx = Canvas.getContext("2d");
+    canvas.width = canvas.width;
+    var fotos = new Array()
+    for (var i=0; i<=9; i++){
+        fotos[i] = new Image()
+    }
+    fotos[0].src = "Imagenes/tabla1.png"
+    fotos[1].src = "Imagenes/tabla2.png"
+    fotos[2].src = "Imagenes/tabla3.png"
+    for (var i=0; i<=9; i++){
+        fotos[i].onload = function (){
+            ctx.drawImage(fotos[i],750, 175 )
         }
     }
 }
 
-setInterval("Animar",3000)

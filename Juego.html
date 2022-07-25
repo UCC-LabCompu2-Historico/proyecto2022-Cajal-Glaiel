@@ -35,7 +35,7 @@
     </nav>
 </header>
 
-<body class="FondoJuego" onload="Segundero(); Juguemos(); Animar()" >
+<body class="FondoJuego" onload="Segundero(); Juguemos(); setInterval(Animar, 3000)" >
     <h3 class="Contenido CenJuego Encabezados" id="ConsignaJuego">Escribir la respuesta correcta a la siguiente multiplicación:</h3>
     <div>
         <article id="MultiJuego">
@@ -50,7 +50,7 @@
             </div>
         </article>
         <br>
-        <canvas width="1300px" height="350px" id="canvas" onload="Animar()">
+        <canvas width="600px" height="350px" id="canvas" onload="Animar()">
         </canvas>
     </div>
 </body>
