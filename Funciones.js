@@ -121,11 +121,12 @@ function Animar(){
     var ctx = Canvas.getContext("2d");
     canvas.width = canvas.width;
     var img = new Image();
-    img.src = "Imagenes/16362.png";
-
+    img.src = "Imagenes/favicon.ico";
     img.onload = function (){
-        ctx.drawImage(img, 10, 50)
+        for (var i=100; i<=1200; i+=100){
+            ctx.drawImage(img, i, 175)
+        }
     }
 }
 
-setInterval("Animar",1000)
+setInterval("Animar",3000)
