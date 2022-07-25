@@ -123,15 +123,43 @@ function Animar(){
     for (var i=0; i<=9; i++){
         fotos[i] = new Image()
     }
+
     fotos[0].src = "Imagenes/tabla1.png"
     fotos[1].src = "Imagenes/tabla2.png"
     fotos[2].src = "Imagenes/tabla3.png"
+    fotos[3].src = "Imagenes/tabla3.png"
+    fotos[4].src = "Imagenes/tabla3.png"
+    fotos[5].src = "Imagenes/tabla3.png"
+    fotos[6].src = "Imagenes/tabla3.png"
+    fotos[7].src = "Imagenes/tabla3.png"
+    fotos[8].src = "Imagenes/tabla3.png"
 
     fotos[0].onload = function (){
         ctx.drawImage(fotos[0], 210, 50)
     }
     fotos[1].onload = function (){
         ctx.drawImage(fotos[1], 210, 50)
+    }
+    fotos[2].onload = function (){
+        ctx.drawImage(fotos[3], 220, 65)
+    }
+    fotos[3].onload = function (){
+        ctx.drawImage(fotos[3], 220, 65)
+    }
+    fotos[4].onload = function (){
+        ctx.drawImage(fotos[3], 220, 65)
+    }
+    fotos[5].onload = function (){
+        ctx.drawImage(fotos[3], 220, 65)
+    }
+    fotos[6].onload = function (){
+        ctx.drawImage(fotos[3], 220, 65)
+    }
+    fotos[7].onload = function (){
+        ctx.drawImage(fotos[3], 220, 65)
+    }
+    fotos[8].onload = function (){
+        ctx.drawImage(fotos[3], 220, 65)
     }
 }
 
