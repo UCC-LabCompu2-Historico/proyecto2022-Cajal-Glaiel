@@ -107,6 +107,9 @@ function Cantidad() {
     document.getElementById("Jugados").innerHTML = VecesJugado;
     if (VecesJugado==10){
         document.getElementById("MultiJuego").remove();
+        document.getElementById("pizarron").remove();
+        document.getElementById("BotonLimpia").remove();
+        document.getElementById("ConsignaJuego").innerHTML = "Su resultado es el siguiente:";
         alert("¡Se termino el juego! Felicitaciones")
         clearInterval(tiempero);
     }
@@ -145,9 +148,17 @@ function Limpiar(){
     ctx = canvas.getContext("2d");
     canvas.width = canvas.width;
 }
-
+x=0;
+dx=2;
 function Animar(){
+    var Canvas = document.getElementById("canvas");
+    var ctx = Canvas.getContext("2d");
 
+    var img = new Image();
+    img.src="Imagenes/Ayuda_Tablas_9.png"
+    img.onload =function (){
+        ctx.drawImage(img, -400, -500);
+    }
 }
 
 setInterval("Animar",1000)

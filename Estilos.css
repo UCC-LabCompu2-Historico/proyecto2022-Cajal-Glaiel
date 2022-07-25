@@ -215,7 +215,7 @@ header nav div #tiempero {
     margin-right: auto;
     margin-top: 10px;
     display: block;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.63);
 }
 
 #pizarron {
