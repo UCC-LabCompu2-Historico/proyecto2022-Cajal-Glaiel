@@ -115,28 +115,21 @@ function Cantidad() {
     }
 }
 
-var posX = 0, posX1 = 0, posX2 = 0, posX3 = 0, posX4 = 0, posX5 = 0, posX6 = 0, posX7 = 0, posX8 = 0, dx = 0.4;
+var posX = 0, posX1 = 0, dx = 0.4;
 var bandera = true;
 
 function Animar(){
     var Canvas = document.getElementById("canvas");
     var ctx = Canvas.getContext("2d");
-    let posY = 50;
+    let posY = 40;
     Canvas.width = Canvas.width;
     var fotos = new Array()
-    for (var i=0; i<=9; i++){
+    for (var i=0; i<=1; i++){
         fotos[i] = new Image()
     }
 
-    fotos[0].src = "Imagenes/tabla1.png"
-    fotos[1].src = "Imagenes/tabla2.png"
-    fotos[2].src = "Imagenes/tabla3.png"
-    fotos[3].src = "Imagenes/tabla4.png"
-    fotos[4].src = "Imagenes/tabla5.png"
-    fotos[5].src = "Imagenes/tabla6.png"
-    fotos[6].src = "Imagenes/tabla7.png"
-    fotos[7].src = "Imagenes/tabla8.png"
-    fotos[8].src = "Imagenes/tabla9.png"
+    fotos[0].src = "Imagenes/tabla1-5.png"
+    fotos[1].src = "Imagenes/tabla6-10.png"
 
     fotos[0].onload = function (){
         ctx.drawImage(fotos[0], posX, posY)
@@ -144,77 +137,15 @@ function Animar(){
     fotos[1].onload = function (){
         ctx.drawImage(fotos[1], posX1, posY)
     }
-    fotos[2].onload = function (){
-        ctx.drawImage(fotos[3], posX2, posY)
-    }
-    fotos[3].onload = function (){
-        ctx.drawImage(fotos[3], posX3, posY)
-    }
-    fotos[4].onload = function (){
-        ctx.drawImage(fotos[3], posX4, posY)
-    }
-    fotos[5].onload = function (){
-        ctx.drawImage(fotos[3], posX5, posY)
-    }
-    fotos[6].onload = function (){
-        ctx.drawImage(fotos[3], posX6, posY)
-    }
-    fotos[7].onload = function (){
-        ctx.drawImage(fotos[3], posX7, posY)
-    }
-    fotos[8].onload = function (){
-        ctx.drawImage(fotos[3], posX8, 65)
-    }
 
     posX += dx;
     posX1 += dx;
-    posX2 += dx;
-    posX3 += dx;
-    posX4 += dx;
-    posX5 += dx;
-    posX6 += dx;
-    posX7 += dx;
-    posX8 += dx;
 
     console.log("Pos X es: " + posX);
     console.log("Pos X1 es: " + posX1);
-    console.log("Pos X2 es: " + posX2);
-    console.log("Pos X3 es: " + posX3);
-    console.log("Pos X4 es: " + posX4);
-    console.log("Pos X5 es: " + posX5);
-    console.log("Pos X6 es: " + posX6);
-    console.log("Pos X7 es: " + posX7);
-    console.log("Pos X8 es: " + posX8);
 
     if (posX > Canvas.width && bandera){
         posX1 = 0;
-        bandera = false;
-    }
-    if (posX1 > Canvas.width && bandera){
-        posX2 = 0;
-        bandera = false;
-    }
-    if (posX2 > Canvas.width && bandera){
-        posX3 = 0;
-        bandera = false;
-    }
-    if (posX3 > Canvas.width && bandera){
-        posX4 = 0;
-        bandera = false;
-    }
-    if (posX4 > Canvas.width && bandera){
-        posX5 = 0;
-        bandera = false;
-    }if (posX5 > Canvas.width && bandera){
-        posX6 = 0;
-        bandera = false;
-    }
-    if (posX6 > Canvas.width && bandera){
-        posX7 = 0;
-        bandera = false;
-    }
-    if (posX7 > Canvas.width && bandera){
-        posX8 = 0;
         bandera = false;
     }
 }
