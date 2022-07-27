@@ -105,47 +105,62 @@ function Cantidad() {
     let VecesJugado = document.getElementById("Jugados").innerHTML;
     VecesJugado++;
     document.getElementById("Jugados").innerHTML = VecesJugado;
-    if (VecesJugado==1){
+    if (VecesJugado==10){
         document.getElementById("MultiJuego").remove();
-        document.getElementById("pizarron").remove();
-        document.getElementById("BotonLimpia").remove();
-        document.getElementById("ConsignaJuego").innerHTML = "Su resultado es el siguiente:";
+        document.getElementById("ConsignaJuego").innerHTML = "Su resultado es el siguiente: " + document.getElementById("puntaje").innerHTML;
         alert("¡Se termino el juego! Felicitaciones")
         clearInterval(tiempero);
     }
 }
 
-var posX = 0, posX1 = 0, dx = 0.4;
+
+/**
+ * Función para correr la animacion
+ * @method Animar
+ * @return Animacion con movimiento continuo
+ */
+
+var posX = 300, posX1 = -450, posX2, dx = 0.4;
 var bandera = true;
 
 function Animar(){
     var Canvas = document.getElementById("canvas");
     var ctx = Canvas.getContext("2d");
-    let posY = 40;
+    let posY = -240;
     Canvas.width = Canvas.width;
     var fotos = new Array()
-    for (var i=0; i<=1; i++){
+    for (var i=0; i<=3; i++){
         fotos[i] = new Image()
     }
 
     fotos[0].src = "Imagenes/tabla1-5.png"
-    fotos[1].src = "Imagenes/tabla6-10.png"
+    fotos[1].src = "Imagenes/Tablas.jpeg"
+    fotos[2].src = "Imagenes/tabla6-10.png"
 
     fotos[0].onload = function (){
         ctx.drawImage(fotos[0], posX, posY)
     }
-    fotos[1].onload = function (){
+    fotos[2].onload = function (){
         ctx.drawImage(fotos[1], posX1, posY)
+    }
+    fotos[1].onload = function (){
+        ctx.drawImage(fotos[1], posX2, posY)
     }
 
     posX += dx;
     posX1 += dx;
+    posX2 += dx;
 
     console.log("Pos X es: " + posX);
     console.log("Pos X1 es: " + posX1);
+    console.log("Pos X2 es: " + posX2);
 
     if (posX > Canvas.width && bandera){
-        posX1 = 0;
+        posX1 = -450;
+        bandera = false;
+    }
+    if (posX1 > Canvas.width && bandera){
+        posX2 = 0;
         bandera = false;
     }
 }
