@@ -120,7 +120,7 @@ function Cantidad() {
  * @return Animacion con movimiento continuo
  */
 
-var posX = 300, posX1 = -450, posX2, dx = 0.4;
+var posX = 300, posX1 = -450, posX2, dx = 0.1;
 var bandera = true;
 
 function Animar(){
